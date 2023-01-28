@@ -14,16 +14,6 @@ namespace Modaler;
 
 defined('ABSPATH') || die;
 
-add_shortcode('modaler-modal', function ($args = []) {
-  ob_start();
-  $args['a'] = 58490;
-  include __DIR__ . "/templates/modal.php";
-  ?>
-  <?php
-  return ob_get_clean();
-});
-
-
 add_shortcode('modaler', function ($args = []) {
   ob_start();
   $anchor = $args['a'] ?? null;
@@ -38,7 +28,7 @@ add_shortcode('modaler', function ($args = []) {
   } else {
     return '';
   }
-  if(empty($post)){
+  if (empty($post)) {
     return;
   }
 
@@ -52,22 +42,20 @@ add_shortcode('modaler', function ($args = []) {
       break;
     default:
       return '';
-}
-  // include __DIR__ . "/templates/modal-test.php";
-  // include __DIR__ . "/templates/offcanvas-test.php";
-  ?>
+  }
 
-  <?php
   return ob_get_clean();
 });
 
 
 add_action('wp_enqueue_scripts', function () {
+
   $css_path = 'frontend/main.css';
   $css_fullpath = __DIR__ . '/frontend/main.css';
   $css_version = filemtime($css_fullpath);
   $css_url = plugins_url($css_path, __FILE__);
   wp_enqueue_style('modaler-style', $css_url, [], $css_version);
+
   $js_path = 'frontend/main.js';
   $js_fullpath = __DIR__ . '/' . $js_path;
   $js_version = filemtime($js_fullpath);
