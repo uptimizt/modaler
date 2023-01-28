@@ -1,9 +1,13 @@
 # modaler
 Popups, Modal, Offcanvas, Float Sidebars for Gutenberg based web sites, by Vite &amp; Bootstrap
 
+Popular design patterns.
+
+Examples by Amazon, GitHub, Bootstrap https://github.com/uptimizt/modaler/labels/examples
+
 ![Popup, Modal & Offcanvas](/.github/demo.jpg)
 
-used 2 components from Bootstrap:
+# used 2 components from Bootstrap:
 
 - Modal https://getbootstrap.com/docs/5.3/components/modal/
 - Offcanvas https://getbootstrap.com/docs/5.3/components/offcanvas/
