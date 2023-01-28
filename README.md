@@ -31,3 +31,13 @@ after that, you just need add hash to any link or buttons block: `<a href="#moda
 ## result
 
 click on link or button and open content in modal or offcanvas
+
+# roadmap
+
+## phase 1
+- MVP
+- tests for some cases
+
+## phase 2
+- improve styles
+- add options and hooks
