@@ -1,4 +1,6 @@
 import './style.scss'
 // import { Offcanvas, Modal } from 'bootstrap';
-import 'bootstrap/js/dist/modal';
-import 'bootstrap/js/dist/offcanvas';
+import Modal from 'bootstrap/js/dist/modal'
+import Offcanvas from 'bootstrap/js/dist/offcanvas';
+window.Modal = Modal;
+window.Offcanvas = Offcanvas;

@@ -14,10 +14,20 @@
 
  defined('ABSPATH') || die;
 
+add_shortcode('modaler-modal', function ($args = []) {
+  ob_start();
+  $args['id'] = 58490;
+  include __DIR__ . "/templates/modal.php";
+  ?>
+  <?php
+  return ob_get_clean();
+});
+
+
 add_shortcode('modaler', function () {
   ob_start();
-  include __DIR__ . "/templates/modal.php";
-  include __DIR__ . "/templates/offcanvas.php";
+  include __DIR__ . "/templates/modal-test.php";
+  include __DIR__ . "/templates/offcanvas-test.php";
   ?>
 
   <?php

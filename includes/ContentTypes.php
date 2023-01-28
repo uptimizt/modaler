@@ -37,7 +37,7 @@ add_action( 'init', function(){
 		'label'                 => __( 'modaler', 'modaler' ),
 		'description'           => __( 'modaler desc', 'modaler' ),
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'revisions', 'custom-fields' ),
+		'supports'              => array( 'title', 'editor', 'revisions', 'custom-fields', 'page-attributes' ),
 		'hierarchical'          => false,
 		'public'                => false,
 		'show_ui'               => true,
