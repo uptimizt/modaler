@@ -1,23 +1,6 @@
 <?php
 
-if (empty($args['id'])) {
-  return;
-}
-
-$post = get_post($args['id']);
-
-if (empty($post)) {
-  return;
-}
-
-$anchor = $args['a'] ?? null;
-if ($anchor) {
-  $data = explode('-', $anchor);
-  if (isset($data[1])) {
-    $post = get_post($data[1]);
-  }
-  // var_dump($data);
-}
+$post = get_post($post);
 ?>
 
 
@@ -32,35 +15,3 @@ if ($anchor) {
     </div>
   </div>
 </div>
-
-<script>
-
-  document.addEventListener('DOMContentLoaded', function () {
-
-    document.addEventListener("click", e => {
-      const origin = e.target.closest("a");
-      if (origin) {
-        if (origin.hash) {
-          showModal(origin.hash);
-        }
-      }
-    });
-    if (window.location.hash) {
-      var hash = window.location.hash;
-      showModal(hash)
-    }
-
-    function showModal(hash) {
-      var modal = document.querySelector(hash);
-      if (modal == undefined) {
-        return;
-      }
-      let myModal = new Modal(modal);
-      myModal.show();
-    }
-
-
-  }, false);
-
-
-</script>
