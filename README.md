@@ -13,8 +13,8 @@ Examples by Amazon, GitHub, Bootstrap https://github.com/uptimizt/modaler/labels
 - Offcanvas https://getbootstrap.com/docs/5.3/components/offcanvas/
 
 # design patterns
-- modal and popup windows for site
-- offcanvas sidebars like Amazon Navigation or Notion
+- modal and popup windows for site https://github.com/uptimizt/modaler/issues/1
+- offcanvas sidebars like Amazon Navigation or Notion https://github.com/uptimizt/modaler/issues/2
 
 # how it works?
 ## add layouts
